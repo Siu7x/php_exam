@@ -1,0 +1,46 @@
+/* Centrage de la page de login */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Centre verticalement sur la page */
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.card-header { text-align: center; margin-bottom: 30px; }
+.card-header h2 { margin-bottom: 10px; font-size: 1.5rem; }
+.card-header p { color: #64748b; font-size: 0.9rem; }
+
+/* Formulaire */
+.form-stack { display: flex; flex-direction: column; gap: 20px; }
+
+.form-group { display: flex; flex-direction: column; gap: 8px; }
+.form-group label { font-size: 0.9rem; font-weight: 600; }
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--light);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus { border-color: var(--main); }
+
+.btn-full { width: 100%; padding: 12px; font-size: 1rem; cursor: pointer; }
+
+/* Footer de la carte */
+.card-footer { text-align: center; margin-top: 25px; font-size: 0.85rem; }
+.card-footer p { margin-bottom: 10px; }
+.card-footer a { color: var(--main); text-decoration: none; font-weight: 500; }
+.forgot-pass { color: #94a3b8 !important; }

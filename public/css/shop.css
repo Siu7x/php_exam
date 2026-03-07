@@ -1,0 +1,28 @@
+/* Header de page */
+.page-header { text-align: center; padding: 40px 0; }
+
+/* Filtres */
+.filters { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; }
+.filter-btn {
+    padding: 8px 18px;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.filter-btn.active { background: var(--main); color: white; border-color: var(--main); }
+
+/* Tags de catégorie */
+.category-tag {
+    font-size: 0.7rem;
+    color: var(--main);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.price { font-weight: bold; font-size: 1.1rem; margin: 5px 0; }
+
+/* Animation simple pour le filtrage */
+.card { transition: transform 0.3s, opacity 0.3s; }
+.hidden { display: none; }

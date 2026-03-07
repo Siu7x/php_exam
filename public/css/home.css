@@ -1,0 +1,42 @@
+/* Variables simples */
+:root {
+    --main: #2563eb; /* Un bleu propre */
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --border: #e2e8f0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: var(--light);
+    color: var(--dark);
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+/* Nav */
+.navbar { background: white; border-bottom: 1px solid var(--border); padding: 15px 0; }
+.flex-nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--main); text-decoration: none; }
+.nav-links { display: flex; list-style: none; gap: 20px; margin: 0; }
+.nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; }
+
+/* Hero */
+.hero { background: white; padding: 60px 0; text-align: center; border-bottom: 1px solid var(--border); }
+h1 { font-size: 2.5rem; margin-bottom: 10px; }
+.search-simple { margin-top: 20px; }
+.search-simple input { padding: 10px; width: 250px; border: 1px solid var(--border); border-radius: 5px; }
+.search-simple button { padding: 10px 20px; background: var(--main); color: white; border: none; border-radius: 5px; cursor: pointer; }
+
+/* Info IA */
+.info-tag { background: #dbeafe; padding: 10px; border-radius: 5px; margin: 20px 0; font-size: 0.9rem; text-align: center; }
+
+/* Grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px; }
+.card { background: white; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.img-placeholder { height: 150px; background: #cbd5e1; }
+.card-body { padding: 15px; }
+.btn { display: block; text-align: center; background: var(--main); color: white; text-decoration: none; padding: 8px; border-radius: 5px; margin-top: 10px; }
+
+footer { text-align: center; padding: 40px 0; color: #64748b; font-size: 0.8rem; }
